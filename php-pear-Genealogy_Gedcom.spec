@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.php
 %define		_class		Genealogy
 %define		_subclass	Gedcom
 %define		_status		stable
