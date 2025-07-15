@@ -32,7 +32,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %pear_package_setup
-%patch0 -p1
+%patch -P0 -p1
 mv docs/%{_pearname}/examples .
 
 %install
