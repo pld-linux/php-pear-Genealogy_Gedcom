@@ -6,12 +6,11 @@ Summary:	%{_pearname} - Gedcom parser
 Summary(pl.UTF-8):	%{_pearname} - parser Gedcom
 Name:		php-pear-%{_pearname}
 Version:	1.0.1
-Release:	3
+Release:	4
 License:	PHP License
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	113e819410248f30f0792b0d60ad8bb4
-Patch0:	peardeps.patch
 URL:		http://pear.php.net/package/Genealogy_Gedcom/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -32,7 +31,6 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %pear_package_setup
-%patch -P0 -p1
 mv docs/%{_pearname}/examples .
 
 %install
