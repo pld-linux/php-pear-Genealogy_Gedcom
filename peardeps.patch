@@ -1,0 +1,28 @@
+--- a/usr/share/pear/Genealogy/Gedcom/Parser.php
++++ b/usr/share/pear/Genealogy/Gedcom/Parser.php
+@@ -31,10 +31,10 @@
+ // $Id: Genealogy_Parser.php,v 1.5 2008/09/21 17:16:58 kguest Exp $
+ //
+ 
+-require_once 'Individual.php';
+-require_once 'Family.php';
+-require_once 'Object.php';
+-require_once 'Header.php';
++require_once 'Genealogy/Gedcom/Individual.php';
++require_once 'Genealogy/Gedcom/Family.php';
++require_once 'Genealogy/Gedcom/Object.php';
++require_once 'Genealogy/Gedcom/Header.php';
+ 
+ /**
+  * Genealogy_Parser
+--- a/usr/share/pear/Genealogy/Gedcom.php
++++ b/usr/share/pear/Genealogy/Gedcom.php
+@@ -31,7 +31,7 @@
+ // $Id: Genealogy_Gedcom.php,v 1.4 2008/09/03 22:40:32 kguest Exp $
+ //
+ 
+-require_once 'Gedcom/Parser.php';
++require_once 'Genealogy/Gedcom/Parser.php';
+ 
+ /**
+  * Genealogy_Gedcom
